@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#f0f1f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PodsumowanieZamowienia">
+
+
+    <LinearLayout
+        android:background="#f0f1f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#3577b5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nazwa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Aktywność 1 - Konfigurator"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#f0f1f2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/naglowek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Podsumowanie Zamówienia"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"/>
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:elevation="6dp"
+                android:layout_marginTop="15sp"
+                android:layout_height="194dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_marginLeft="10sp">
+
+                    <TextView
+                        android:id="@+id/rozmiarpizzy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rozmiar: "
+                        android:layout_marginStart="10sp"
+                        android:textSize="25sp"
+                        android:layout_marginTop="15sp"/>
+
+                    <TextView
+                        android:id="@+id/ciastopizzy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ciasto: "
+                        android:layout_marginStart="10sp"
+                        android:textSize="25sp"/>
+
+
+                    <TextView
+                        android:id="@+id/sztutuki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sztuk: "
+                        android:layout_marginStart="10sp"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/wynik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Razem: "
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10sp"
+                        android:textColor="#00b518"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/powrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POWRÓT"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25sp"
+                android:backgroundTint="#3577b5"
+                android:layout_marginTop="180sp"
+                android:layout_marginRight="25sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

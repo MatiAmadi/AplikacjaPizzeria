@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f1f2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#f0f1f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#3577b5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nazwa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Aktywność 1 - Konfigurator"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#f0f1f2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/naglowek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Konfigurator Pizzy"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"/>
+
+            <TextView
+                android:id="@+id/autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor: Mateusz Rumiński 5TF"
+                android:textSize="17sp"
+                android:textColor="#717980"
+                android:layout_marginLeft="20sp"/>
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:elevation="6dp"
+                android:layout_marginTop="15sp"
+                android:layout_height="194dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_marginLeft="10sp">
+
+                    <TextView
+                        android:id="@+id/rozmiar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6sp"
+                        android:text="Wybierz rozmiar:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/mala"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="18sp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Mała 25zł" />
+
+                    <RadioButton
+                        android:id="@+id/srednia"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Średnia 35zł" />
+
+                    <RadioButton
+                        android:id="@+id/duza"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:textSize="16sp"
+                        android:text="Duża 45zł"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/grubeciasto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grube ciasto (+5zł)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Liczba sztuk: "
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/sztuki"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="np. 1"
+                    android:text="1"
+                    android:inputType="number"
+
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/podsumowanie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRZEJDŹ DO PODSUMOWANIA"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25sp"
+                android:backgroundTint="#3577b5"
+                android:layout_marginRight="25sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
